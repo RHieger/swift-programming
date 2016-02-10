@@ -1,4 +1,4 @@
-//: Playground - noun: a place where people can play
+//: Playground - Variables and Variable Operations
 
 import Cocoa
 
@@ -16,3 +16,13 @@ let numberOfStoplights: Int = 4     // Explicit type declaration
 var population: Int = 5422
 
 let townName: String = "Knowhere"
+
+// Interpolate above variables to create a constant townDescription.
+
+let townDescription =
+    "\(townName) has a population of \(population) " +
+    "and \(numberOfStoplights) stoplights."
+
+// Log townDescription to console.
+
+print(townDescription)
