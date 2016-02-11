@@ -8,18 +8,15 @@ var message: String             // String object for output message
 
 var hasPostOffice: Bool = true  // Boolean variable for presence of post office
 
-message = population < 10000 ? "\(population) is a small town!" :
-    "\(population) is a pretty big town!"
-
-//if population < 10000   {
-//    
-//    message = "\(population) is a small town!"
-//    
-//}   else    {
-//    
-//    message = "\(population) is pretty big!"
-//    
-//}   // end if-else
+if population < 10000   {
+    
+    message = "\(population) is a small town!"
+    
+}   else    {
+    
+    message = "\(population) is pretty big!"
+    
+}   // end if-else
 
 // Print message to console.
 
