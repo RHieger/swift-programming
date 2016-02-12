@@ -65,3 +65,25 @@ let numberOfChapters = 3       // Also of type int, but inferred
 let numberOfPeople: UInt = 40
 
 let volumeAdjustment: Int32 = -1000
+
+/***********************************************************
+ *                                                         *
+ * Declaring Int Types with Invalid Values:                *
+ *                                                         *
+ * The following code declares both UInt and Int8 types    *
+ * to demonstrate the compile-time error that results.     *
+ *                                                         *
+ * NOTE: After demonstrating the errors, the offending     *
+ *       code was commented out. To see the errors,        *
+ *       simply uncomment the code.                        *
+ *                                                         *
+ ***********************************************************
+*/
+
+// Trouble ahead!
+
+//let firstBadValue: UInt = -1    // Unsigned int does not support
+                                // negative integers.
+
+//let secondBadValue: Int8 = 200  // Int8 supports values in range
+                                // -127 to 128. 200 is too large.
