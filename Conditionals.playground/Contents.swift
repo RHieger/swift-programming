@@ -16,7 +16,11 @@ if population < 10000   {
     
     message = "\(population) is a medium town!"
     
-}   else {
+} else if population >= 250000 && population < 10000000 {
+    
+    message = "\(population) is more of an urban center!"
+    
+} else {
         
     message = "\(population) is pretty big!"
         
