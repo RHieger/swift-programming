@@ -55,3 +55,13 @@ let numberOfPages: Int = 10     // Declares the type explicitly.
 let numberOfChapters = 3       // Also of type int, but inferred
                                // by the compiler.
 
+/***********************************************************
+ *                                                         *
+ * Declaring UInt and Int32 Explicitly:                    *
+ *                                                         *
+ ***********************************************************
+*/
+
+let numberOfPeople: UInt = 40
+
+let volumeAdjustment: Int32 = -1000
