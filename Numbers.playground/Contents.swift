@@ -125,3 +125,39 @@ print(5 * 6)
 print(10 + 2 * 5)       // 20, because 2 * 5 is evaluated first
 
 print(30 - 5 - 5)       // 20, because 30 -5 is evaluated first
+
+
+/*************************************************************
+ *                                                           *
+ * Using Parenthesis to Ease Evaluation of Precedence:       *
+ *                                                           *
+ * Because anything appearing within parenthesis is          *
+ * evaluated first in math operations, you can use them      *
+ * to ease the job of specifying precisely the calculation   *
+ * you wish to take place.                                   *
+ *                                                           *
+ *************************************************************
+*/
+
+print( (10 + 2) * 5 )       // 60, because (10 + 2) is now evaluated first
+
+print( 30 - (5 - 5) )       // 30, because (5 - 5) is now evaluated first
+
+/*************************************************************
+ *                                                           *
+ * Surprise Results from Integer Division:                   *
+ *                                                           *
+ * The following code demonstrates a surprising result       *
+ * when one integer is divided by another and there is       *
+ * a remainder (i.e., the number cannot be divided by        *
+ * the divisor and leave a remainder of 0).                  *
+ *                                                           *
+ * Rather than producing a floating point number, which      *
+ * one might expect, the result is truncating down to        *
+ * its integer portion only. This is because the data type   *
+ * Int cannot represent floating point numbers.              *
+ *                                                           *
+ *************************************************************
+*/
+
+print(11 / 3)   // 3, because 3 * 3 = 9 (remainder 1 truncated)
