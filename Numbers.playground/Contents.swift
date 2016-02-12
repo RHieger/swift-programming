@@ -39,3 +39,19 @@ print("The maximum UInt32 value is \(UInt32.max).")
 // Unsigned Int32 (UInt32) Type.
 
 print("The minimum UInt32 value is \(UInt32.min).")
+
+/***********************************************************
+ *                                                         *
+ * Creating Integer instances implicitly and explicitly:   *
+ *                                                         *
+ * The following code demonstrates implicit and explict    *
+ * declaration of the Int type.                            *
+ *                                                         *
+ ***********************************************************
+*/
+
+let numberOfPages: Int = 10     // Declares the type explicitly.
+
+let numberOfChapters = 3       // Also of type int, but inferred
+                               // by the compiler.
+
