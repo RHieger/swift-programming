@@ -12,19 +12,15 @@ if population < 10000   {
     
     message = "\(population) is a small town!"
     
-}   else    {
+}   else if population >= 10000 && population < 50000 {
     
-        if population >= 10000 && population < 50000 {
-        
-            message = "\(population) is a medium town!"
-        
-        }   else {
-        
-            message = "\(population) is pretty big!"
-        
-    }   // end inner if-else
+    message = "\(population) is a medium town!"
     
-}   // end if-else
+}   else {
+        
+    message = "\(population) is pretty big!"
+        
+}   // end if-else if-else
 
 // Print message to console.
 
