@@ -103,3 +103,25 @@ print(10 + 20)
 print(30 - 5)
 
 print(5 * 6)
+
+/************************************************************
+ *                                                          *
+ * Precedence and Associativity:                            *
+ *                                                          *
+ * The order operations are performed are dictated by the   *
+ * precedence studied in Algebra. The famous memory scheme  *
+ * is PEMDAS (Please Excuse My Dear Aunt Sally), which      *
+ * translates to the following order:                       *
+ *                                                          *
+ * 1. Parenthesis                                           *
+ * 2. Exponents                                             *
+ * 3. Multiplication                                        *
+ * 4. Addition                                              *
+ * 5. Subtraction                                           *
+ *                                                          *
+ ************************************************************
+*/
+
+print(10 + 2 * 5)       // 20, because 2 * 5 is evaluated first
+
+print(30 - 5 - 5)       // 20, because 30 -5 is evaluated first
