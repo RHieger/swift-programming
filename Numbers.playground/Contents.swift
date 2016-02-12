@@ -87,3 +87,19 @@ let volumeAdjustment: Int32 = -1000
 
 //let secondBadValue: Int8 = 200  // Int8 supports values in range
                                 // -127 to 128. 200 is too large.
+
+/************************************************************
+ *                                                          *
+ * Basic Math Operations:                                   *
+ *                                                          *
+ * The following code demonstrates simple addition,         *
+ * subtraction and multiplication.                          *
+ *                                                          *
+ ************************************************************
+*/
+
+print(10 + 20)
+
+print(30 - 5)
+
+print(5 * 6)
