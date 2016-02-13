@@ -227,3 +227,22 @@ print("x has been decremented to \(x).")
 x += 10     // Equivalent to x = x + 10
 
 print("x has had 10 added to it and is now \(x).")
+
+/***************************************************************
+ *                                                             *
+ * Overflowing Data Types:                                     *
+ *                                                             *
+ * What happens when an operation causes the value of a        *
+ * data type, for example Int8, to go beyond the bounds        *
+ * of values it can represent?                                 *
+ *                                                             *
+ * The following code, now commented out, will halt execution  *
+ * of this playground with a trap. To see this trap, simply    *
+ * uncomment the code.                                         *
+ *                                                             *
+ ***************************************************************
+*/
+
+let y: Int8 = 120
+
+//let z = y + 10
