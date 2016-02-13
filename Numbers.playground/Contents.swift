@@ -177,3 +177,36 @@ print(11 / 3)   // 3, because 3 * 3 = 9 (remainder of 1 truncated)
 print(11 % 3)   // 2, because remainder after division is 2
 
 print(-11 % 3)  // -2, because remainder after division is -2
+
+/*************************************************************
+ *                                                           *
+ * Increment and Decrement Operators:                        *
+ *                                                           *
+ * The following code demonstrates the increment (++) and    *
+ * decrement (--) operators. They increase the value of a    *
+ * variable by 1 or decrease its value by 1, respectively.   *
+ *                                                           *
+ *************************************************************
+*/
+
+var x = 10;     // Declare an Int variable.
+
+x++             // Perform postfix incrementation.
+
+// NOTE: Notice that on the line of incrementation, the playground
+// displays the value as 10. This is because the incrementation
+// does not take place until the next instruction is excuted. The
+// x++ syntax, called postfix incrementation, causes this. It is
+// also possible to do prefix incrementation, ++x, which would
+// increment the value of x immediately.
+
+print("x has been incremented to \(x).")
+
+x--
+
+// NOTE: As noted above, postfix decrementation would execute when
+// the next instruction is executed, but prefix decrementation is
+// also possible.
+
+print("x has been decremented to \(x).")
+
