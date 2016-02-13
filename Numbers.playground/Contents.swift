@@ -246,3 +246,26 @@ print("x has had 10 added to it and is now \(x).")
 let y: Int8 = 120
 
 //let z = y + 10
+
+/**************************************************************
+ *                                                            *
+ * Using Overflow Operators:                                  *
+ *                                                            *
+ * Swift does provide a means of dealing with overflow on     *
+ * data types, known as the overflow operator (e.g. &+).      *
+ * This, too produces a somewhat counter-intuitive result,    *
+ * but avoides trapping.                                      *
+ *                                                            *
+ * In short, the overflow operator allows values up to the    *
+ * limit and then backtracks through negative values,         *
+ * skipping 0, until the calculation is complete.             *
+ * For example:                                               *
+ *                                                            *
+ * 127 &+ 10 = -119                                           *
+ *                                                            *
+ **************************************************************
+*/
+
+let z = y &+ 10
+
+print("120 &+ 10 is \(z).")
