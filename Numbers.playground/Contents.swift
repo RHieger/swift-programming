@@ -160,4 +160,20 @@ print( 30 - (5 - 5) )       // 30, because (5 - 5) is now evaluated first
  *************************************************************
 */
 
-print(11 / 3)   // 3, because 3 * 3 = 9 (remainder 1 truncated)
+print(11 / 3)   // 3, because 3 * 3 = 9 (remainder of 1 truncated)
+
+/*************************************************************
+ *                                                           *
+ * Getting Remainders--the Modulus Operator:                 *
+ *                                                           *
+ * This code demonstrates how we can get the remainder       *
+ * from a division operation. We do this with the modulus    *
+ * operator. This operator returns only the remainder, not   *
+ * the integer portion of the quotient.                      *
+ *                                                           *
+ *************************************************************
+*/
+
+print(11 % 3)   // 2, because remainder after division is 2
+
+print(-11 % 3)  // -2, because remainder after division is -2
