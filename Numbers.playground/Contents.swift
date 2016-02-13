@@ -210,3 +210,20 @@ x--
 
 print("x has been decremented to \(x).")
 
+/****************************************************************
+ *                                                              *
+ * Combining Addition and Assignment, += Operator:              *
+ *                                                              *
+ * This code demonstrates the += operator which is simply       *
+ * a shorthand for x = x + y.                                   *
+ *                                                              *
+ * There are also similar operators for subtraction,            *
+ * multiplication, division and modulo operations--             *
+ * -=, *=, \= and %=, respectively.                             *
+ *                                                              *
+ ****************************************************************
+*/
+
+x += 10     // Equivalent to x = x + 10
+
+print("x has had 10 added to it and is now \(x).")
