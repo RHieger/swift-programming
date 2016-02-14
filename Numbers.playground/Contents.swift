@@ -269,3 +269,36 @@ let y: Int8 = 120
 let z = y &+ 10
 
 print("120 &+ 10 is \(z).")
+
+/**************************************************************
+ *                                                            *
+ * Converting Between Integer Types:                          *
+ *                                                            *
+ * Because Swift is strongly typed, that is, you cannot       *
+ * perform mathematical operations with different types,      *
+ * calculations involving an addition between type Int8       *
+ * and Int16 types will cause a compile time error. The       *
+ * solution to this problem, should you need to calculate     *
+ * using two different data types, is type casting, or        *
+ * converting one data type to another so that both operands  *
+ * match in type.                                             *
+ *                                                            *
+ * The code below first demonstrates the invalid practice,    *
+ * commented out, then the correct methodology. Should you    *
+ * wish to see the compile-time error, comment out the        *
+ * correct code, then uncomment the incorrect code.           *
+ *                                                            *
+ **************************************************************
+*/
+
+let a: Int16 = 200  // Conflicting data type.
+
+let b: Int8 = 50    // Conflicting data type.
+
+//let c = a + b       // Uh-oh!
+
+// NOTE: We can correct the above error by either type casting
+//       a to an Int8 type or type casting b to an Int16 type.
+//       For this exercise, we will cast b to type Int16.
+
+let c = a + Int16(b)
