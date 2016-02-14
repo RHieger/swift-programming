@@ -371,3 +371,31 @@ if d1 == d2 {
     print("d1 and d2 are the same!")
     
 }   // end if
+
+/*************************************************************
+ *                                                           *
+ * Unexpected Results:                                       *
+ *                                                           *
+ * Now we alter the value of d1 by adding 0.1 to it. We then *
+ * compare d1 to the value 1.2. Surprisingly, the equality   *
+ * comparison evalutes to false. Why? The short answer is    *
+ * that 1.2 is really represented internally as an           *
+ * approximation of something like 1.1999999999999999, not   *
+ * quite 1.2. This results in inconsistent and unexpected    *
+ * results.                                                  *
+ *                                                           *
+ * The complexities of floating point representation are     *
+ * beyond the scope of this study. The moral is, do not      *
+ * use floating point types where absolute accuracy is       *
+ * needed. There are other means of assuring this accuracy.  *
+ *                                                           *
+ *************************************************************
+*/
+
+print("d1 + 0.1 is \(d1 + 0.1).")
+
+if d1 + 0.1 == 1.2 {
+    
+ print("d1 + 0.1 is equal to 1.2.")     // This will not print.
+    
+}   // end if
