@@ -302,3 +302,23 @@ let b: Int8 = 50    // Conflicting data type.
 //       For this exercise, we will cast b to type Int16.
 
 let c = a + Int16(b)
+
+/**************************************************************
+ *                                                            *
+ * Declaration of floating-point Number Types:                *
+ *                                                            *
+ * Swift's type inferrence for a Float literal is Double,     *
+ * which is 64 bits allowing for better approximation of      *
+ * floating point values than the Float, which is 32 bits.    *
+ *                                                            *
+ * The code below demonstrates both explicit and implicit     *
+ * declaration of these types.                                *
+ *                                                            *
+ **************************************************************
+*/
+
+let d1 = 1.1                // Implicitly Double
+
+let d2: Double = 1.1        // Explicitly Double
+
+let f1: Float = 100.3       // Explicitly Float
