@@ -348,3 +348,26 @@ print(11.0 / 3.0)       // Division
 //       we have 11 / 3 = 3.66666666666667.
 
 print(12.4 % 5.0)       // Modulus Operation
+
+/*************************************************************
+ *                                                           *
+ * Comparing Two Floating Point Numbers:                     *
+ *                                                           *
+ * There is an inherent imprecision in binary floating       *
+ * point numbers. Decimal values can only be approximated    *
+ * to a greater or lesser level of precision.                *
+ *                                                           *
+ * To demonstrate this point, the code below compares two    *
+ * Double values from above d1 and d2, one implicitly        *
+ * declared, and the other explicitly declared. In this      *
+ * instance, we get a positive result as both values are     *
+ * precisely 1.1. However, stay tuned for the next example.  *
+ *                                                           *
+ *************************************************************
+*/
+
+if d1 == d2 {
+    
+    print("d1 and d2 are the same!")
+    
+}   // end if
