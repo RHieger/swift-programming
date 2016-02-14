@@ -322,3 +322,29 @@ let d1 = 1.1                // Implicitly Double
 let d2: Double = 1.1        // Explicitly Double
 
 let f1: Float = 100.3       // Explicitly Float
+
+/**************************************************************
+ *                                                            *
+ * Operations on Floating Point Numbers:                      *
+ *                                                            *
+ * It is possible to perform all the same kinds of            *
+ * mathematical operations on Floats that you can on          *
+ * the Int data types.                                        *
+ *                                                            *
+ * The code below demonstrates but three of the allowed       *
+ * operations for Float.                                      *
+ *                                                            *
+ **************************************************************
+*/
+
+print(10.0 + 11.4)      // Addition
+
+print(11.0 / 3.0)       // Division
+
+// NOTE: Here is a big difference between Int operations and Float
+//       or Double operations. With Int types 11 / 2 would provide
+//       only the whole number portion of the quotient, resulting
+//       in 11 / 3 = 3. Here, with an inferred type of Double,
+//       we have 11 / 3 = 3.66666666666667.
+
+print(12.4 % 5.0)       // Modulus Operation
