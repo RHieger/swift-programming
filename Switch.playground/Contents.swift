@@ -13,11 +13,22 @@ var errorString: String = "The request failed with the error: "
 
 switch statusCode   {
     
-case 400, 401, 403, 404:
-    errorString = "There was something wrong with the request."
-    fallthrough
+case 100, 101:
+    errorString += " Informational, 1xx."
+    
+case 204:
+    errorString += " Successful but no content, 204."
+    
+case 300...307:
+    errorString += " Redirection, 3xx."
+    
+case 400...417:
+    errorString += " Client error, 4xx."
+    
+case 500...505:
+    errorString += " Server error, 5xx."
     
 default:
-    errorString += " Please review the request and try again."
+    errorString += " Unknown. Please review the request and try again."
     
 }   // end switch statusCode
