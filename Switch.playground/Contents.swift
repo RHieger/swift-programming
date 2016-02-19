@@ -28,7 +28,7 @@ case 400...417:
 case 500...505:
     errorString += " Server error, \(statusCode)."
     
-case let unknownCode:
+default:
     errorString = "\(statusCode) is not a known error code."
     
 }   // end switch statusCode
