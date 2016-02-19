@@ -4,7 +4,7 @@ import Cocoa
 
 // HTTP Status Code Error:
 
-var statusCode: Int = 204
+var statusCode: Int = 418
 
 var errorString: String = "The request failed with the error: "
 
@@ -37,3 +37,10 @@ default:
     errorString = "Unexpected error encountered."
     
 }   // end switch statusCode
+
+let error = (statusCode, errorString)
+
+// Access the elements within tuple errorCode above:
+
+error.0
+error.1
