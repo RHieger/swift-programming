@@ -108,8 +108,23 @@ var phasersOverheating = false      // Phaser Status
 
 var phaserFireCount = 0             // Shots fired
 
+var borgShipsDestroyed = 0          // Number of Borg ships destroyed
+
 while shields > 0   {
 
+    // Evaluate: Have 500 Borg ships been destroyed?
+    
+    if borgShipsDestroyed == 500    {
+        
+        // If 500 Borg ships destroyed, break out of
+        // loop to end the game.
+        
+        print("You won the game! The Borg is defeated!")
+        
+        break                       // Breaks out of loop.
+        
+    }   // end if borgShipsDestroyed == 500
+    
     // Evaluate: Are phasers overheating? If so, act accordingly.
 
     if phasersOverheating   {
@@ -142,6 +157,8 @@ while shields > 0   {
     
     print("Fire phasers!")
     
-    ++phaserFireCount
+    ++phaserFireCount               // Increment phaser fire count.
+    
+    ++borgShipsDestroyed            // Increment Borg ships destroyed.
     
 }   // end while shields > 0
