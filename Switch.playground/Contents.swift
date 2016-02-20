@@ -68,3 +68,13 @@ default:
     print("All items found.")
     
 }   // end switch errorCodes
+
+// The if-case statement:
+
+let age = 25
+
+if case 18...35 = age   {
+    
+    print("Cool demographic")
+    
+}   // end if case 18...35 = age
