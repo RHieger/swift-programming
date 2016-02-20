@@ -77,23 +77,71 @@ while i < 6 {
 // less, the phasers will fire at least once (an improvement
 // of user experience).
 
-var shields: Int = 0                // Initialize at 0 to demonstrate point.
+//var shields: Int = 0                // Initialize at 0 to demonstrate point.
 
-repeat  {
+//repeat  {
 
-    var shieldPercent: Double = Double(shields) * 0.10 * 100
+//    var shieldPercent: Double = Double(shields) * 0.10 * 100
+
+//    if shields == 10    {
+//
+//        print("Shields at maximum!")    // Print shield status
+//
+//    }   else    {
+//        
+//        print("Shields at \(shieldPercent)%! Shields collapsed!")
+//
+//    }   // end if-else
+
+//    print("Fire phasers!")
+
+//}   while shields > 0              // end repeat-while
+
+// Now we revise the above-commented code to explore control transfer
+// statements explored earlier in Chapter 5.
+
+// 1. Initialize the shield variable.
+
+var shields = 5
+
+var phasersOverheating = false      // Phaser Status
+
+var phaserFireCount = 0             // Shots fired
+
+while shields > 0   {
+
+    // Evaluate: Are phasers overheating? If so, act accordingly.
+
+    if phasersOverheating   {
     
-    if shields == 10    {
-
-        print("Shields at maximum!")    // Print shield status
-
-    }   else    {
+        print("Phasers overheated! Cooldown initiated.")
+    
+        sleep(5)    // Pause for 5 seconds.
+    
+        print("Phasers ready to fire!")
+    
+        sleep(1)    // Pause for 1 second.
         
-        print("Shields at \(shieldPercent)%! Shields collapsed!")
+        phasersOverheating = false
+        
+        phaserFireCount = 0
+        
+    }   // end if
 
-    }   // end if-else
+    // Evaluate: is phaserFireCount > 100? Act accordingly.
+
+    if phaserFireCount > 100    {
+    
+        phasersOverheating = true   // Set status to true.
+        
+        continue                    // Return flow to top of loop.
+    
+    }   // end if
+    
+    // Print "Fire phasers!"
     
     print("Fire phasers!")
-
-
-}   while shields > 0              // end repeat-while
+    
+    ++phaserFireCount
+    
+}   // end while shields > 0
