@@ -73,7 +73,7 @@ default:
 
 let age = 25
 
-if case 18...35 = age   {
+if case 18...35 = age where age >= 21  {
     
     print("Cool demographic")
     
