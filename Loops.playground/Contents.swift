@@ -4,10 +4,8 @@ import Cocoa
 
 var myFirstInt: Int = 0
 
-for _ in 1...5  {
+for case let i in 1...100 where i % 3 == 0  {
     
-    ++myFirstInt    // increment myFirstInt
+    print(i)
     
-    print(myFirstInt)
-    
-}   // end for i in 1...5
+}   // end for i in 1...100 where i % 3 == 0
