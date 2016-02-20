@@ -32,3 +32,39 @@ while i < 6 {
     ++i
     
 }   // end while i < 6
+
+// the repeat while Statement (equivalent to do while in C-based language)
+
+// 1. Declare the counter variable.
+
+var shields: Int = 10                // Sheilds in game
+
+while shields >= 0   {
+
+    var shieldPercent: Double = Double(shields) * 0.10 * 100
+    if shields == 10    {
+    
+        print("Shields at maximum!")    // Print shield status
+        
+    }   else    {
+        
+        
+        print("Shields at \(shieldPercent)%!")
+        
+    }   // end if else
+    
+    // Fire phasers:
+    
+    if shieldPercent != 0.0 {
+        
+        print("Fire phasers!")
+        
+    }   else {
+        
+        print("Shields collapsed!")
+        
+    }   // end if-else
+    
+    shields--                       // Decrement shields.
+    
+}   //  end while
