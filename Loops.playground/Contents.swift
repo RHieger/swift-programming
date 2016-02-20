@@ -37,34 +37,63 @@ while i < 6 {
 
 // 1. Declare the counter variable.
 
-var shields: Int = 10                // Sheilds in game
+//var shields: Int = 10                // Sheilds in game
 
-while shields >= 0   {
+// 2. Build while loop.
 
-    var shieldPercent: Double = Double(shields) * 0.10 * 100
-    if shields == 10    {
-    
-        print("Shields at maximum!")    // Print shield status
-        
-    }   else    {
-        
-        
-        print("Shields at \(shieldPercent)%!")
-        
-    }   // end if else
-    
+//while shields >= 0   {
+
+//    var shieldPercent: Double = Double(shields) * 0.10 * 100
+//    if shields == 10    {
+//    
+//        print("Shields at maximum!")    // Print shield status
+//        
+//    }   else    {
+//        
+//        
+//        print("Shields at \(shieldPercent)%!")
+//        
+//    }   // end if else
+
     // Fire phasers:
     
-    if shieldPercent != 0.0 {
+//    if shieldPercent != 0.0 {
+
+//        print("Fire phasers!")
+//        
+//    }   else {
+//        
+//        print("Shields collapsed!")
+//        
+//    }   // end if-else
+
+//    shields--                       // Decrement shields.
+//    
+//}   //  end while
+
+// Now we modify the commented-out code above to demonstrate
+// the repeat-while loop. This version assures that even if
+// the condition is not met, that is, the shields are at 0 or
+// less, the phasers will fire at least once (an improvement
+// of user experience).
+
+var shields: Int = 0                // Initialize at 0 to demonstrate point.
+
+repeat  {
+
+    var shieldPercent: Double = Double(shields) * 0.10 * 100
+    
+    if shields == 10    {
+
+        print("Shields at maximum!")    // Print shield status
+
+    }   else    {
         
-        print("Fire phasers!")
-        
-    }   else {
-        
-        print("Shields collapsed!")
-        
+        print("Shields at \(shieldPercent)%! Shields collapsed!")
+
     }   // end if-else
     
-    shields--                       // Decrement shields.
-    
-}   //  end while
+    print("Fire phasers!")
+
+
+}   while shields > 0              // end repeat-while
