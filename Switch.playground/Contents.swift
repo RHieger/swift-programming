@@ -38,9 +38,33 @@ default:
     
 }   // end switch statusCode
 
-let error = (statusCode, errorString)
+let error = (code: statusCode, error: errorString)
 
 // Access the elements within tuple errorCode above:
 
-error.0
-error.1
+error.code
+error.error
+
+// Another method for testing ranges of values:
+
+let firstErrorCode = 404
+
+let secondErrorCode = 200
+
+let errorCodes = (firstErrorCode, secondErrorCode)
+
+switch errorCodes   {
+    
+case (404, 404):
+    print("No items found.")
+    
+case (404, _):
+    print("First item not found.")
+    
+case (_, 404):
+    print("Second item not found.")
+    
+default:
+    print("All items found.")
+    
+}   // end switch errorCodes
