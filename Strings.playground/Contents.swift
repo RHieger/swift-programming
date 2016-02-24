@@ -41,3 +41,7 @@ for scalar in playground.unicodeScalars {
 // Creating a Canonical Equivalent for a Combined Scalar--a with acute accent:
 
 let aAcutePrecomposed = "\u{00e1}"  // a with acute accent
+
+// Check for equivalence between aAcute and aAcutePrecomposed:
+
+let b = (aAcute == aAcutePrecomposed)   // Boolean true
