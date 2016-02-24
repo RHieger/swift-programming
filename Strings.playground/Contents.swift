@@ -17,3 +17,7 @@ for c: Character in mutablePlayground.characters {
     print("\(c)")
     
 }   // end for c: Character in mutablePlayground.characters
+
+// Add Unicode Scalar for Emoji Smiley Face with Sunglasses:
+
+let oneCoolDude = "\u{1f60e}"
