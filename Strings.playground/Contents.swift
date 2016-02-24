@@ -21,3 +21,7 @@ for c: Character in mutablePlayground.characters {
 // Add Unicode Scalar for Emoji Smiley Face with Sunglasses:
 
 let oneCoolDude = "\u{1f60e}"
+
+// Create a Combining Scalar for a with acute accent:
+
+let aAcute = "\u{0061}\u{0301}"
