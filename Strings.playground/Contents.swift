@@ -25,3 +25,15 @@ let oneCoolDude = "\u{1f60e}"
 // Create a Combining Scalar for a with acute accent:
 
 let aAcute = "\u{0061}\u{0301}"
+
+// Decompose the Unicode Scalars that appear in the constant
+// playground declared above:
+
+for scalar in playground.unicodeScalars {
+    
+    print("\(scalar.value)")
+    
+    // NOTE: This prints not the Unicode value, but its
+    //       32 bit decimal equivalent.
+    
+}   // end for scalar in playground.unicodeScalars
