@@ -37,3 +37,7 @@ for scalar in playground.unicodeScalars {
     //       32 bit decimal equivalent.
     
 }   // end for scalar in playground.unicodeScalars
+
+// Creating a Canonical Equivalent for a Combined Scalar--a with acute accent:
+
+let aAcutePrecomposed = "\u{00e1}"  // a with acute accent
