@@ -71,8 +71,20 @@ let fifthCharacter = playground[end]    // Now we can access the index.
 
 let range = fromStart...end             // First 5 characters of playground
 
-let firstFive = playground[range]       // First 5 characters: "Hello"
+//let firstFive = playground[range]     // First 5 characters: "Hello"
+
+var firstFive = playground[range]       // Changed to var for Silver Challenge
 
 // Print firstFive to Console:
 
 print(firstFive)                        // Not in book; added for clarity
+
+// Remake firstFive as a compound scalar structure:
+
+firstFive = "\u{0048}\u{0065}\u{006c}\u{006c}\u{006f}"
+
+// Print firstFive again to prove out theory:
+
+firstFive += " (compound scalar)"       // Differentiate from original
+
+print(firstFive)
