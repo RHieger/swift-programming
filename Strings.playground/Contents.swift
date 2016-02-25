@@ -45,3 +45,14 @@ let aAcutePrecomposed = "\u{00e1}"  // a with acute accent
 // Check for equivalence between aAcute and aAcutePrecomposed:
 
 let b = (aAcute == aAcutePrecomposed)   // Boolean true
+
+// Counting Characters
+//
+// NOTE: A canonical equivalent will be the same in count as its
+//       constituent Unicode Scalars. In other words, even though
+//       the scalars are more in number than a canonical equivalent,
+//       they will be counted as the same amount as the equivalent
+//       because of their canonic relationship.
+
+print("aAcute Character Count: \(aAcute.characters.count)\n",
+    "aAcutePrecomposed Character Count: \(aAcutePrecomposed.characters.count)")
