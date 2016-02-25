@@ -66,3 +66,13 @@ let toPosition = 4                      // 5th character of String
 let end = fromStart.advancedBy(toPosition)
 
 let fifthCharacter = playground[end]    // Now we can access the index.
+
+// Now let's get the first five characters of String playground:
+
+let range = fromStart...end             // First 5 characters of playground
+
+let firstFive = playground[range]       // First 5 characters: "Hello"
+
+// Print firstFive to Console:
+
+print(firstFive)                        // Not in book; added for clarity
