@@ -56,3 +56,13 @@ let b = (aAcute == aAcutePrecomposed)   // Boolean true
 
 print("aAcute Character Count: \(aAcute.characters.count)\n",
     "aAcutePrecomposed Character Count: \(aAcutePrecomposed.characters.count)")
+
+// Finding a specific index within a String:
+
+let fromStart = playground.startIndex   // 0 index of String
+
+let toPosition = 4                      // 5th character of String
+
+let end = fromStart.advancedBy(toPosition)
+
+let fifthCharacter = playground[end]    // Now we can access the index.
