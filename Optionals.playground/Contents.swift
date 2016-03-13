@@ -13,3 +13,11 @@ errorCodeString = "404"
 // Log value of optional errorCodeString to console.
 
 print(errorCodeString)
+
+// Demonstrate Logging nil value of optional to console.
+
+var errorCodeString2: String?   // Another error code String
+
+// Log this optional's nil value to console.
+
+print(errorCodeString2)
