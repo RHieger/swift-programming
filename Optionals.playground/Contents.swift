@@ -115,3 +115,24 @@ if let theError = errorCodeString, errorCodeInteger = Int(theError)
         print("\(theError): \(errorCodeInteger)")
         
 }   // end if
+
+// Now we will use our old friend, errorCodeString, to explore
+// optional chaining:
+
+var errorDescription: String?       // Descriptive error message
+
+if let theError = errorCodeString, errorCodeInteger = Int(theError)
+
+    where errorCodeInteger == 404    {
+        
+        errorDescription = ("\(errorCodeInteger + 200): the requested resource was not found.")
+        
+}   // end if
+
+// Convert message to all capital letters.
+
+var upCaseErrorDescription = errorDescription?.uppercaseString
+
+// Log message to console.
+
+print(upCaseErrorDescription)
