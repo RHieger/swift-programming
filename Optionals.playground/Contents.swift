@@ -49,3 +49,19 @@ if errorCodeString2 != nil  {
     print(errorCodeString2)
     
 }   // end if-else
+
+// Optional Binding:
+
+var errorCodeString3: String?
+
+// Assign value to errorCodeString3.
+
+errorCodeString3 = "500"
+
+// Now write conditional with optional binding:
+
+if let theError = errorCodeString3 {
+    
+    print(theError)     // Log theError to console if not nil
+    
+}   // end if
