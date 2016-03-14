@@ -99,3 +99,19 @@ if let theError = errorCodeString4, errorCodeInteger = Int(theError)    {
     print("\(theError): \(errorCodeInteger)")
     
 }   // end if
+
+// Adding a where clause to multiple optional binding:
+
+// NOTE: Here we re-use our old friend errorCodeString from above to
+// demonstrate that with the where clause, we enforce a condition
+// that a specified error code string must be found in order for
+// the print to console to be executed. Both optionals must
+// successfully unwrap, or the log to console will not occur.
+
+if let theError = errorCodeString, errorCodeInteger = Int(theError)
+    
+    where errorCodeInteger == 404   {
+        
+        print("\(theError): \(errorCodeInteger)")
+        
+}   // end if
