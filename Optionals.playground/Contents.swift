@@ -87,3 +87,15 @@ if let theError = errorCodeString4  {
     }   // end if
     
 }   // end if
+
+// Unwrapping multiple optionals in one conditional statement:
+
+// NOTE: The output of multiple optionals unwrapped in the same
+//       conditional has the same console output as the nested
+//       conditionals and optional binding shown above.
+
+if let theError = errorCodeString4, errorCodeInteger = Int(theError)    {
+    
+    print("\(theError): \(errorCodeInteger)")
+    
+}   // end if
