@@ -136,3 +136,11 @@ var upCaseErrorDescription = errorDescription?.uppercaseString
 // Log message to console.
 
 print(upCaseErrorDescription)
+
+// Modify Optional in place with appendContentsOf(_:).
+
+upCaseErrorDescription?.appendContentsOf(" PLEASE TRY AGAIN.")
+
+// Log message to console.
+
+print(upCaseErrorDescription)
