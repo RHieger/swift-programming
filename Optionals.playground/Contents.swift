@@ -65,3 +65,25 @@ if let theError = errorCodeString3 {
     print(theError)     // Log theError to console if not nil
     
 }   // end if
+
+// Nested Optional Binding:
+
+var errorCodeString4: String?
+
+// Assign value to errorCodeString4.
+
+errorCodeString4 = "403"
+
+// Now write nested conditional with nested optional binding:
+
+if let theError = errorCodeString4  {
+    
+    // Now type cast errorCodeString4 to type Int in optional binding.
+    
+    if let errorCodeInteger = Int(theError) {
+        
+        print("\(theError): \(errorCodeInteger)")
+        
+    }   // end if
+    
+}   // end if
