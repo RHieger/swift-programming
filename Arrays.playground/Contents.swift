@@ -10,4 +10,9 @@ import Cocoa
 
 // 2nd syntax:
 
-var bucketList: [String]
+//var bucketList: [String]          // Commented out to allow for 2nd syntax
+                                    // plus initialization of Array
+
+// Declare and initialize Array with 2nd Syntax:
+
+var bucketList: [String] = ["Climb Mt. Everest"]
