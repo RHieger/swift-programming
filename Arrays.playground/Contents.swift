@@ -15,4 +15,9 @@ import Cocoa
 
 // Declare and initialize Array with 2nd Syntax:
 
-var bucketList: [String] = ["Climb Mt. Everest"]
+//var bucketList: [String] = ["Climb Mt. Everest"]  // Commented out for
+                                                    // following demonstration
+
+// Initializing Array with type inference:
+
+var bucketList = ["Climb Mt. Everest"]
