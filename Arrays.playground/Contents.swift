@@ -43,3 +43,7 @@ bucketList.removeAtIndex(2)
 // Confirm removal of Array element at index 2:
 
 bucketList
+
+// Getting the count of elements in an Array:
+
+print("There are \(bucketList.count) elements in the Array.")
