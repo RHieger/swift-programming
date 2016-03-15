@@ -163,3 +163,18 @@ let description1 = errorDescription ?? "No error"
 // Log description1 to console.
 
 print(description1)
+
+// Demonstrate force unrwapping a nil value:
+
+//let testValue: String!
+//
+//print(testValue)
+
+// NOTE: The above segment force unwrapping a nil value, the Silver
+//       Challenge for Chapter 8, has been commented out because it
+//       causes the playground to crash.
+//
+//       Why? Because the String testValue is forcibly unwrapped and
+//       its value is nil. Accessing a forcibly unwrapped nil always
+//       causes programs to crash because there is no value to be
+//       accessed.
