@@ -53,3 +53,11 @@ print("There are \(bucketList.count) elements in the Array.")
 print("The top three items are:")
 
 print(bucketList[0...2])
+
+// Use subscripting to append to existing item:
+
+bucketList[2] += " in Australia"
+
+// Log change to console.
+
+print(bucketList[2])
