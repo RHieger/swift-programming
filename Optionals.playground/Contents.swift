@@ -144,3 +144,12 @@ upCaseErrorDescription?.appendContentsOf(" PLEASE TRY AGAIN.")
 // Log message to console.
 
 print(upCaseErrorDescription)
+
+
+// The nil coalescing operator:
+
+let description = errorDescription ?? "No error"
+
+// Log description to console.
+
+print(description)
