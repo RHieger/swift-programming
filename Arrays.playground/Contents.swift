@@ -21,3 +21,7 @@ import Cocoa
 // Initializing Array with type inference:
 
 var bucketList = ["Climb Mt. Everest"]
+
+// Using (_:append) Method of Array Class:
+
+bucketList.append("Fly hot air balloon to Fiji")
