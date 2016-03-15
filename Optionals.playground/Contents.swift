@@ -153,3 +153,13 @@ let description = errorDescription ?? "No error"
 // Log description to console.
 
 print(description)
+
+// Show value if errorDescription is set to nil:
+
+errorDescription = nil
+
+let description1 = errorDescription ?? "No error"
+
+// Log description1 to console.
+
+print(description1)
