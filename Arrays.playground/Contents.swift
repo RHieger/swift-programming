@@ -47,3 +47,9 @@ bucketList
 // Getting the count of elements in an Array:
 
 print("There are \(bucketList.count) elements in the Array.")
+
+// Using Array subscripting to extract first three items:
+
+print("The top three items are:")
+
+print(bucketList[0...2])
