@@ -25,3 +25,13 @@ var bucketList = ["Climb Mt. Everest"]
 // Using (_:append) Method of Array Class:
 
 bucketList.append("Fly hot air balloon to Fiji")
+
+// Append four more Array elements:
+
+bucketList.append("Watch the Lord of the Rings trilogy in one day")
+
+bucketList.append("Go on a walkabout")
+
+bucketList.append("Scuba dive in the Great Blue Hole")
+
+bucketList.append("Find a triple rainbow")
