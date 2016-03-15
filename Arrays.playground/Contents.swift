@@ -35,3 +35,11 @@ bucketList.append("Go on a walkabout")
 bucketList.append("Scuba dive in the Great Blue Hole")
 
 bucketList.append("Find a triple rainbow")
+
+// Remove an item for the Array:
+
+bucketList.removeAtIndex(2)
+
+// Confirm removal of Array element at index 2:
+
+bucketList
