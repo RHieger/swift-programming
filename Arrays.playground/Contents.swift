@@ -61,3 +61,13 @@ bucketList[2] += " in Australia"
 // Log change to console.
 
 print(bucketList[2])
+
+// Replacing an Array item:
+
+// Change Mt. Everest to Mt. Kilimanjaro.
+
+bucketList[0] = "Climb Mt. Kilimanjaro"
+
+// Log altered Array to console.
+
+print(bucketList)
