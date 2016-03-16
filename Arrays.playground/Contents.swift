@@ -71,3 +71,47 @@ bucketList[0] = "Climb Mt. Kilimanjaro"
 // Log altered Array to console.
 
 print(bucketList)
+
+// Now create another bucket list and initialize with a single item,
+// but loop through an array of items to populate the rest of the Array:
+
+var bucketList2 = ["Climb Mt. Kilimanjaro"]
+
+// Log new Array to console.
+
+print(bucketList2)
+
+// Initialize an array to hold new items for bucketList2:
+
+var newItems = ["Fly hot air balloon to Fiji",
+                "Watch the Lord of the Rings trilogy in one day",
+                "Go on a walkabout",
+                "Scuba dive in the Great Blue Hole",
+                "Find a triple rainbow"]
+
+// Now let's populate the Array bucketList2 with the items
+// in the newItems Array.
+
+for item in newItems    {
+    
+    // Append each item within newItems Array.
+    
+    bucketList2.append(item)
+    
+}   // end for-in
+
+// Log fully-populated bucketList2 to console.
+
+print(bucketList2)
+
+// As in bucketList, remove item at index 2
+
+bucketList2.removeAtIndex(2)    // Remove "Watch the Lord of the Rings..."
+
+// Finally, append content to bucketList[2]
+
+bucketList2[2] += " in Australia"
+
+// Log revised bucketList2 to console.
+
+print(bucketList2)
