@@ -115,3 +115,43 @@ bucketList2[2] += " in Australia"
 // Log revised bucketList2 to console.
 
 print(bucketList2)
+
+// Refactor the above code for Array bucketList2 by using the
+// addition and assignment operator (+=), rather than a loop.
+
+// Declare another bucketList Array.
+
+var bucketList3 = ["Climb Mt. Everest"]
+
+// Log bucketList3 Array to console.
+
+print(bucketList3)
+
+// Use addition and assignment operator to populate Array with
+// items in secondary Array, newItems.
+
+bucketList3 += newItems
+
+// Log complete bucketList3 to console.
+
+print(bucketList3)
+
+// Remove item at index 2.
+
+bucketList3.removeAtIndex(2)
+
+// Log revised bucketList3 to console.
+
+print(bucketList3)
+
+// Now append content to content at index 2.
+
+bucketList3[2] += " in Australia"
+
+// Now change content of item at index 0.
+
+bucketList3[0] = "Climb Mt. Kilimanjaro"
+
+// Log completed Array to console.
+
+print(bucketList3)
