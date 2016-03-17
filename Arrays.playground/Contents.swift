@@ -197,3 +197,13 @@ var myronsList2 = [
 // Retest for Equality:
 
 let equalArrays = (bucketList3 == myronsList2)
+
+// Declare/Initialize an Immutable Array.
+
+let lunches = [
+                "Cheesburger",
+                "Veggie Pizza",
+                "Chicken Caesar Salad",
+                "Black Bean Burrito",
+                "Falafel Wrap"
+              ]
