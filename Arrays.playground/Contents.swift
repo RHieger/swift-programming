@@ -164,3 +164,21 @@ bucketList3.insert("Toboggan across Alaska", atIndex: 2)
 // Log revised bucketList3 to console.
 
 print(bucketList3)
+
+// Checking that two Arrays are equal:
+
+var myronsList = [
+                    "Climb Mt. Kilimanjaro",
+                    "Fly hot air balloon to Fiji",
+                    "Tobbogan across Alaska",
+                    "Go on a walkabout in Australia",
+                    "Find a triple rainbow",
+                    "Scuba dive in the Great Blue Hole"
+                 ]
+
+// Test bucketList3 and myronsList for equality:
+
+let equal = (bucketList3 == myronsList)
+
+// NOTE: This evaluates false because bucketList3 and myronsList
+//       are ordered differently.
