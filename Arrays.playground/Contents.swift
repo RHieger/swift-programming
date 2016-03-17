@@ -155,3 +155,12 @@ bucketList3[0] = "Climb Mt. Kilimanjaro"
 // Log completed Array to console.
 
 print(bucketList3)
+
+
+// Inserting items at specific indexes (different from append):
+
+bucketList3.insert("Toboggan across Alaska", atIndex: 2)
+
+// Log revised bucketList3 to console.
+
+print(bucketList3)
