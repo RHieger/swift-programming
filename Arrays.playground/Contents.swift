@@ -182,3 +182,18 @@ let equal = (bucketList3 == myronsList)
 
 // NOTE: This evaluates false because bucketList3 and myronsList
 //       are ordered differently.
+
+// Reorder to match bucketList3:
+
+var myronsList2 = [
+    "Climb Mt. Kilimanjaro",
+    "Fly hot air balloon to Fiji",
+    "Toboggan across Alaska",
+    "Go on a walkabout in Australia",
+    "Scuba dive in the Great Blue Hole",
+    "Find a triple rainbow"
+]
+
+// Retest for Equality:
+
+let equalArrays = (bucketList3 == myronsList2)
