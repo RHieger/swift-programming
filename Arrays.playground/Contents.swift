@@ -207,3 +207,33 @@ let lunches = [
                 "Black Bean Burrito",
                 "Falafel Wrap"
               ]
+
+
+// BRONZE CHALLENGE:
+
+// Find a variable defined on Array type that checks whether toDoList
+// has any elements in it.
+//
+// The variable, first found through Google, then through painstaking
+// search of documentation is isEmpty, not surprisingly a Bool.
+//
+// First declare and populate toDoList Array.
+
+var toDoList: [String] =
+["Take garbage out", "Pay bills", "Cross of finished items"]
+
+// Now check if toDoList is empty using isEmpty.
+
+if toDoList.isEmpty {
+    
+    print("toDoList is not empty; it contains three String elements.")
+    
+}   else    {
+    
+    print("toDoList is an empty Array of type String.")
+    
+}   // end if-else
+
+// NOTE: If I used Array literal syntax with type inferrence, checking for
+//       empty state threw an error. I therefore explicitly declare toDoList
+//       here as an Array of type String, unlike in the book.
