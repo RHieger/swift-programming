@@ -70,3 +70,11 @@ movieRatings["The Cabinet of Dr. Caligari"] = 5
 // Here is the updated Dictionary object, movieRatings:
 
 movieRatings
+
+// Removing a value from movieRatings:
+
+movieRatings.removeValueForKey("Dark City")
+
+// Here is the updated Dictionary object, movieRatings:
+
+movieRatings
