@@ -87,3 +87,16 @@ movieRatings
 // Setting a key's value to nil:
 
 movieRatings["Dark City"] = nil
+
+// Loop through the Dictionary and log its keys and values
+// to the console.
+
+print("\nMOVIE RATINGS:\n")
+
+for (key, value) in movieRatings    {
+    
+    // Log to console:
+    
+    print("The movie \(key) was rated \(value).")
+    
+}   // end for (key, value) in movieRatings
