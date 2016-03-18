@@ -237,3 +237,42 @@ if toDoList.isEmpty {
 // NOTE: If I used Array literal syntax with type inferrence, checking for
 //       empty state threw an error. I therefore explicitly declare toDoList
 //       here as an Array of type String, unlike in the book.
+
+// SILVER CHALLENGE:
+//
+// 1. Use a loop to reverse order of toDoList Array.
+// 2. Check documentation for more efficient method and implement.
+//
+// METHOD 1: Using a Loop:
+
+// Solution found at this URL:
+
+//  http://stackoverflow.com/questions/33463511/how-to-reverse-array-in-swift-without-using-reverse
+
+// Log to console that this is method 1 for Array reversal
+
+print("\nMETHOD 1 TO REVERSE bucketList3:\n")
+
+for var itemIndex = bucketList3.count - 1; itemIndex >= 0; itemIndex--  {
+    
+    print(bucketList3[itemIndex])
+    
+}   // end for
+
+//  METHOD 2: Using a Loop with the reverse() Method:
+
+// Solution found at this URL: 
+
+//  https://www.hackingwithswift.com/example-code/arrays/how-to-loop-through-an-array-in-reverse
+
+// Log to console that this is method 2 for Array reversal.
+
+print("\nMETHOD 2 TO REVERSE bucketList3:\n")
+
+for item in bucketList3.reverse()   {
+    
+    // Log to console.
+    
+    print(item)
+    
+}   // end for-in
