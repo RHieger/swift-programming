@@ -25,3 +25,8 @@ var movieRatings = [
                     "Chunking Express": 5,
                     "Dark City": 4
                    ]
+
+// Get the count of instances in the Dictionary
+// and log it to the console.
+
+print("I have rated \(movieRatings.count) movies.")
