@@ -34,3 +34,11 @@ print("I have rated \(movieRatings.count) movies.")
 // Access a value from Dictionary:
 
 let darkoRating = movieRatings["Donnie Darko"]
+
+// Modifying a value in a Dictionary:
+
+movieRatings["Dark City"] = 5
+
+// Retrieve changed Dictionary
+
+movieRatings
