@@ -30,3 +30,7 @@ var movieRatings = [
 // and log it to the console.
 
 print("I have rated \(movieRatings.count) movies.")
+
+// Access a value from Dictionary:
+
+let darkoRating = movieRatings["Donnie Darko"]
