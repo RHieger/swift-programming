@@ -62,3 +62,11 @@ if let lastRating = oldRating,
         print("Old rating: \(lastRating); Current rating: \(currentRating)")
         
 }   // end if
+
+// Adding a value to movieRatings:
+
+movieRatings["The Cabinet of Dr. Caligari"] = 5
+
+// Here is the updated Dictionary object, movieRatings:
+
+movieRatings
