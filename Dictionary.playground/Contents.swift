@@ -73,8 +73,17 @@ movieRatings
 
 // Removing a value from movieRatings:
 
-movieRatings.removeValueForKey("Dark City")
+//movieRatings.removeValueForKey("Dark City")
+
+// NOTE: Above code commented out to allow for next exercise.
 
 // Here is the updated Dictionary object, movieRatings:
 
-movieRatings
+//movieRatings
+
+// NOTE: Since above code is commented out, there is no purpose in listing
+// instances within the Dictionary.
+
+// Setting a key's value to nil:
+
+movieRatings["Dark City"] = nil
