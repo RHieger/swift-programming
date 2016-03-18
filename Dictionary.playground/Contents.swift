@@ -42,3 +42,23 @@ movieRatings["Dark City"] = 5
 // Retrieve changed Dictionary
 
 movieRatings
+
+// Updating a Dictionary Value:
+
+// Set the updateValue.
+
+let oldRating: Int? =
+movieRatings.updateValue(5, forKey: "Donnie Darko")
+
+// If there is an update for the specified key, log it to
+// the console.
+
+if let lastRating = oldRating,
+    currentRating = movieRatings["Donnie Darko"] {
+        
+        
+        // Log old and new ratings to the console.
+        
+        print("Old rating: \(lastRating); Current rating: \(currentRating)")
+        
+}   // end if
