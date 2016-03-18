@@ -100,3 +100,13 @@ for (key, value) in movieRatings    {
     print("The movie \(key) was rated \(value).")
     
 }   // end for (key, value) in movieRatings
+
+// Loop through the Dictionary and log only its keys to the console.
+
+print("\nMOVIES RATED:\n")
+
+for movie in movieRatings.keys  {
+    
+    print("User has rated \(movie).")
+    
+}   // end for movie in movieRatings.keys
