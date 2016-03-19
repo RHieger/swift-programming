@@ -23,7 +23,16 @@ import Cocoa
 
 // Instantiate a Set object using an initializer:
 
-var groceryBag = Set( ["Oranges", "Apples", "Pinapple"] )
+//var groceryBag = Set( ["Oranges", "Apples", "Pinapple"] )
+
+// NOTE: The above code is commented out in order to demonstrate
+//       another means of instantiating a Set object. Here we will
+//       declare the Set explicitly, specifying its type, then use
+//       the literal Array syntax.
+
+// Instantite groceryBag Set Explicitly with Array Literal:
+
+var groceryBag: Set = ["Oranges", "Apples", "Pineapple"]
 
 // Loop through groceryBag Set:
 
