@@ -119,3 +119,7 @@ let album = [
                 "Smokey's Carpet Cleaning Service": 187,
                 "Track 4": 221
             ]
+
+// Translate a Dictionary into an Array:
+
+let watchedMovies = Array(movieRatings.keys)
