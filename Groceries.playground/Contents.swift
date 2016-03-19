@@ -57,3 +57,43 @@ if !hasBananas {
     print("\ngroceryBag contains Bananas.\n")
     
 }   // end if-else
+
+
+// Using the (_:union) Method to Join Sets Together:
+
+let friendsGroceryBag = Set(["Bananas", "Cereal", "Milk",
+                             "Oranges", "Apples", "Pineapple"])
+
+// Join groceryBag with friendsGroceryBag:
+
+let commonGroceryBag = groceryBag.union(friendsGroceryBag)
+
+// Log groceryBag to console.
+
+print("\nITEMS IN GROCERY BAG:")
+
+for food in groceryBag   {
+    
+    print(food)
+    
+}   // end for-in
+
+// Log friendsGroceryBag to console.
+
+print("\nITEMS IN FRIENDS GROCERY BAG:")
+
+for food in friendsGroceryBag    {
+    
+    print(food)
+    
+}   // end for-in
+
+// Log commonGroceryBag to console.
+
+print("\nITEMS IN COMMON GROCERY BAG:")
+
+for food in commonGroceryBag    {
+    
+    print(food)
+    
+}   // end for-in
