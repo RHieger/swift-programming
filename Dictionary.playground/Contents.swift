@@ -123,3 +123,34 @@ let album = [
 // Translate a Dictionary into an Array:
 
 let watchedMovies = Array(movieRatings.keys)
+
+// Silver Challenge:
+//
+// Create a dictionary containing zip codes tied to counties
+// within a state. I have chosen New York. For simplicity, only
+// three of the state's counties are represented.
+
+// First declare the Dictionary.
+
+var newYorkCounties = [
+                        [ "New York County": ["10002", "10003", "10012",
+                                            "10021", "10025"] ],
+    
+                        [ "Kings County":    ["11210", "11201", "11209",
+                                              "11226", "11215"] ],
+    
+                        [ "Dutchess County":  ["10512", "10980", "10509",
+                                               "10520", "10522"] ]
+    
+                   ]    // end newYorkState
+
+
+// Log only the values of newYorkState to the console.
+
+print("\nNew York has the following zip codes:\n")
+
+for county in newYorkCounties   {
+    
+    print(county)
+    
+}   // end for-in
