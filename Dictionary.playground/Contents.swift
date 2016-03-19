@@ -110,3 +110,12 @@ for movie in movieRatings.keys  {
     print("User has rated \(movie).")
     
 }   // end for movie in movieRatings.keys
+
+// Create an immutable Dictionary:
+
+let album = [
+                "Diet Roast Beef": 268,
+                "Dubba Dubbs Stubs His Toe": 467,
+                "Smokey's Carpet Cleaning Service": 187,
+                "Track 4": 221
+            ]
