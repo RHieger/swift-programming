@@ -97,3 +97,33 @@ for food in commonGroceryBag    {
     print(food)
     
 }   // end for-in
+
+// Use _(:intersect) Method to Determine Duplicate Items:
+
+// Instantiate Set for roommatesGroceryBag.
+
+let roommatesGroceryBag = Set(["Apples", "Bananas", "Cereal", "Toothpaste"])
+
+// Get set intersection that contains returnable duplicate items.
+
+let itemsToReturn = commonGroceryBag.intersect(roommatesGroceryBag)
+
+// Log contents of roomematesGroceryBag.
+
+print("\nITEMS IN ROOMMATES GROCERY BAG:")
+
+for item in roommatesGroceryBag {
+    
+    print(item)
+    
+}   // end for-in
+
+// Log duplicate items to return to grocery store.
+
+print("\nDUPLICATE ITEMS TO RETURN TO GROCERY STORE:")
+
+for item in itemsToReturn   {
+    
+    print(item)
+    
+}   // end for-in
