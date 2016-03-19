@@ -127,3 +127,27 @@ for item in itemsToReturn   {
     print(item)
     
 }   // end for-in
+
+// Detecting Intersections Between Sets:
+
+// Instantiate Set yourSecondBag.
+
+let yourSecondBag = Set(["Berries", "Yogurt"])
+
+// Instantiate Set roommatesSecondBag.
+
+let roommatesSecondBag = Set(["Grapes", "Honey"])
+
+// Here we test for intersection (duplication) between the Sets.
+
+let disjoint = yourSecondBag.isDisjointWith(roommatesSecondBag)
+
+// NOTE:    The isDisjointWith Method returns a Boolean true or false.
+//          If there is intersection (duplication) between two sets,
+//          it returns false; if there is not intersection, the method
+//          returns true.
+
+// Log the result to the console:
+
+print("\nyourSecondBag: \(yourSecondBag) does not intersect with"
+    + " roommatesSecondBag: \(roommatesSecondBag): \(disjoint)")
