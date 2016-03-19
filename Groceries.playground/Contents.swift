@@ -151,3 +151,27 @@ let disjoint = yourSecondBag.isDisjointWith(roommatesSecondBag)
 
 print("\nyourSecondBag: \(yourSecondBag) does not intersect with"
     + " roommatesSecondBag: \(roommatesSecondBag): \(disjoint)")
+
+// BRONZE CHALLENGE:
+//
+// Does myCities contain all the cities in yourCities?
+//
+// What method determines this question?
+
+// Instantiate Set for myCities.
+
+let myCities = Set(["Atlanta", "Chicago", "Jacksonville",
+                    "New York", "San Francisco"])
+
+// Instantiate Set for yourCities.
+
+let yourCities = Set(["Chicago", "San Francisco", "Jacksonville"])
+
+// Determine if myCities is a Superset of yourCities.
+
+let containsYourCities = myCities.isSupersetOf(yourCities)
+
+// Log result to console.
+
+print("\nmyCities: \(myCities) is a superset of yourCities:" +
+      "\n\(yourCities): \(containsYourCities)")
