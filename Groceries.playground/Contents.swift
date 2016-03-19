@@ -13,3 +13,13 @@ groceryBag.insert("Apples")
 groceryBag.insert("Oranges")
 
 groceryBag.insert("Pineapples")
+
+// Loop through groceryBag Set:
+
+print("\nITEMS IN GROCERY BAG:\n")
+
+for food in groceryBag  {
+    
+    print(food)
+    
+}   // end for-in
