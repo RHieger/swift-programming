@@ -133,24 +133,25 @@ let watchedMovies = Array(movieRatings.keys)
 // First declare the Dictionary.
 
 var newYorkCounties = [
-                        [ "New York County": ["10002", "10003", "10012",
-                                            "10021", "10025"] ],
+                        "New York County": ["10002", "10003", "10012",
+                                            "10021", "10025"],
     
-                        [ "Kings County":    ["11210", "11201", "11209",
-                                              "11226", "11215"] ],
+                        "Kings County":    ["11210", "11201", "11209",
+                                              "11226", "11215"],
     
-                        [ "Dutchess County":  ["10512", "10980", "10509",
-                                               "10520", "10522"] ]
+                        "Dutchess County":  ["10512", "10980", "10509",
+                                               "10520", "10522"]
     
                    ]    // end newYorkState
 
 
 // Log only the values of newYorkState to the console.
 
-print("\nNew York has the following zip codes:\n")
+// NOTE: For this revised and more correct version of the Silver Challenge,
+//       I am indebted to the Big Nerd Ranch Forum article at this URL:
+//
+//       http://forums.bignerdranch.com/viewtopic.php?f=597&t=10820
 
-for county in newYorkCounties   {
-    
-    print(county)
-    
-}   // end for-in
+let newYorkZips = Array(newYorkCounties.values)
+
+print("\nNew York has the following zip codes:\n\n \(newYorkZips)")
