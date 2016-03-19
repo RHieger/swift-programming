@@ -43,3 +43,17 @@ for food in groceryBag  {
     print(food)
     
 }   // end for-in
+
+// Use (_:contains) Method to see if "Bananas" exists in groceryBag.
+
+let hasBananas = groceryBag.contains("Bananas")
+
+if !hasBananas {
+    
+    print("\ngroceryBag does not contain Bananas.\n")
+    
+}   else    {
+    
+    print("\ngroceryBag contains Bananas.\n")
+    
+}   // end if-else
