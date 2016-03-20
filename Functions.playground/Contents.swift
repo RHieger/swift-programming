@@ -27,3 +27,19 @@ func personalGreeting(name: String) {
 // Call personalGreeting(name: String).
 
 personalGreeting("Bobby")
+
+// Declare a function that performs a division operation
+// and has two parameters num (numerator) and den
+// (denominator) and whose result is a quotient.
+
+func divisionDescription(num: Double, den: Double)  {
+    
+    // Log result to console.
+    
+    print("\(num) divided by \(den) equals \(num / den).\n")
+    
+}   // end divisionDescription(num: Double, den: Double)
+
+// Call function.
+
+divisionDescription(9.0, den: 3.0)
