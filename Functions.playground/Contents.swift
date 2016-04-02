@@ -92,25 +92,25 @@ printPersonalGreetings("Alex", "Chris", "Drew", "Pat", "Bobby")
 //       with a value. But we can. This adds a desirable flexibility to
 //       the method.
 
-func divisionDescription(forNumerator num: Double,
-                       andDenominator den: Double,
-              withPunctuation punctuation: String = ".")  {
-    
-    // Print calculation to console.
-    
-    print("\(num) divided by \(den) equals \(num / den)\(punctuation)\n")
-    
-}   // end divisionDescription()
-
-// Call function without final parameter.
-
-divisionDescription(forNumerator: 9.0, andDenominator: 3.0)
-
-// Call function with final parameter specified.
-
-divisionDescription(forNumerator: 9.0,
-                    andDenominator: 3.0,
-                    withPunctuation: "!")
+//func divisionDescription(forNumerator num: Double,
+//                       andDenominator den: Double,
+//              withPunctuation punctuation: String = ".")  {
+//    
+//    // Print calculation to console.
+//    
+//    print("\(num) divided by \(den) equals \(num / den)\(punctuation)\n")
+//    
+//}   // end divisionDescription()
+//
+//// Call function without final parameter.
+//
+//divisionDescription(forNumerator: 9.0, andDenominator: 3.0)
+//
+//// Call function with final parameter specified.
+//
+//divisionDescription(forNumerator: 9.0,
+//                    andDenominator: 3.0,
+//                    withPunctuation: "!")
 
 // Using the inout parameter in a function:
 
@@ -138,3 +138,24 @@ func appendErrorCode(code: Int,
 appendErrorCode(400, toErrorString: &error)
 
 error
+
+// Returning Values from a Function:
+
+// NOTE: The earlier divisionDescription() function above is now
+//       commented out in order to demonstrate implementing the
+//       function so that it returns a String value. Below is the
+//       similar, but more useful function.
+
+func divisionDescription(forNumerator num: Double,
+                       andDenominator den: Double,
+              withPunctuation punctuation: String = ".") -> String  {
+    
+    return "\(num) divided by \(den) equals \(num / den)\(punctuation)"
+    
+}   // end divisionDescription()
+
+// Call divisionDescription and log to console.
+
+print( divisionDescription(forNumerator: 9.0,
+                         andDenominator: 3.0,
+                        withPunctuation: "!") )
