@@ -152,10 +152,39 @@ func divisionDescription(forNumerator num: Double,
     
     return "\(num) divided by \(den) equals \(num / den)\(punctuation)"
     
-}   // end divisionDescription()
+}   // end divisionDescription(...)
 
 // Call divisionDescription and log to console.
 
 print( divisionDescription(forNumerator: 9.0,
                          andDenominator: 3.0,
                         withPunctuation: "!") )
+
+// Nested Functions:
+
+// NOTE: A nested function is defined within the code block of another
+//       function; therefore, it is only available within the function
+//       that encloses it. Trying to call that function from outside of
+//       its enclosing function would fail as out-of-scope.
+
+
+// FORMULA: A = (base * height) / 2
+
+func areaOfTriangle(withBase base: Double,
+                 andHeight height: Double) -> Double  {
+    
+    let numerator = base * height
+    
+    func divide() -> Double {
+        
+        return numerator / 2
+        
+    }   // end divide()
+    
+    return divide()             // Returns result of divide()
+    
+}   // end areaOfTriangle(...)
+
+// Call areaOfTriangle.
+
+areaOfTriangle(withBase: 3.0, andHeight: 5.0)
