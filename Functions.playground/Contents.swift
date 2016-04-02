@@ -268,10 +268,44 @@ if let theName = middleName {
 
 // Early exits with guard statement.
 
+//func greetByMiddleName( name: (first: String, middle: String?,
+//                        last: String) ) {
+//    
+//    guard let middleName = name.middle else {
+//        
+//        print("\nHey there!")
+//        
+//        return
+//        
+//    }   // end guard
+//    
+//    print("\nHey, \(middleName)!")
+//    
+//}   // end greetByMiddleName( name: (first: String, middle, String?,
+//    //                               last: String) )
+
+// Call greetByMiddleName.
+
+//greetByMiddleName( ("Matt", "Danger", "Mathias") )
+
+// Bronze Challenge:
+//
+// guard statements support the use of where clauses. Using a where
+// clause with a guard statement gives you further control over the
+// statement’s condition. Refactor the greetByMiddleName(_:) function
+// to have a where clause in its guard statement. This where clause
+// should check to see if the middle name is fewer than 4 characters.
+// If it is, then greet that person by their middle name. If it is not,
+// then use the generic greeting.
+
+// NOTE: In order to realize this challenge, I have commented out the
+//       earlier implementation above.
+
 func greetByMiddleName( name: (first: String, middle: String?,
-                        last: String) ) {
+                        last: String) )                         {
     
-    guard let middleName = name.middle else {
+    guard let middleName = name.middle
+    where name.middle?.characters.count < 4 else  {
         
         print("\nHey there!")
         
@@ -281,9 +315,8 @@ func greetByMiddleName( name: (first: String, middle: String?,
     
     print("\nHey, \(middleName)!")
     
-}   // end greetByMiddleName( name: (first: String, middle, String?,
-    //                               last: String) )
+}   // end greetByMiddleName(...)
 
-// Call greetByMiddleName.
+// Now call the function.
 
-greetByMiddleName( ("Matt", "Danger", "Mathias") )
+greetByMiddleName( ("Robert", "Lee", "Hieger") )
