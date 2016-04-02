@@ -265,3 +265,25 @@ if let theName = middleName {
 
 // NOTE: Nothing gets printed to the console because the value of theName
 //       is nil.
+
+// Early exits with guard statement.
+
+func greetByMiddleName( name: (first: String, middle: String?,
+                        last: String) ) {
+    
+    guard let middleName = name.middle else {
+        
+        print("\nHey there!")
+        
+        return
+        
+    }   // end guard
+    
+    print("\nHey, \(middleName)!")
+    
+}   // end greetByMiddleName( name: (first: String, middle, String?,
+    //                               last: String) )
+
+// Call greetByMiddleName.
+
+greetByMiddleName( ("Matt", "Danger", "Mathias") )
