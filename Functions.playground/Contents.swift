@@ -239,3 +239,29 @@ let theSortedNumbers = sortEvenOdd(aBunchOfNumbers)
 
 print("\nThe even numbers are: \(theSortedNumbers.evens); the odd",
       "numbers are: \(theSortedNumbers.odds)")
+
+// Using an optional return.
+
+func grabMiddleName( name: (String, String?, String) ) -> String?  {
+    
+    return name.1
+    
+}   // end grabMiddleName( name: (String, String?, String) ) -> String?
+
+// Store return value from middle name to constant.
+
+let middleName = grabMiddleName(("Matt", nil, "Mathias"))
+
+// NOTE: The above function call returns nil because the middle String
+//       optional is nil.
+
+// Log the result to the console.
+
+if let theName = middleName {
+    
+    print("\n\(theName)")
+    
+}   // end if
+
+// NOTE: Nothing gets printed to the console because the value of theName
+//       is nil.
