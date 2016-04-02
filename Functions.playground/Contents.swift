@@ -111,3 +111,30 @@ divisionDescription(forNumerator: 9.0, andDenominator: 3.0)
 divisionDescription(forNumerator: 9.0,
                     andDenominator: 3.0,
                     withPunctuation: "!")
+
+// Using the inout parameter in a function:
+
+// First define a string variable with a basic, but incomplete
+// error message.
+
+var error = "The request failed:"
+
+// Now we define a function that will use the inout parameter to
+// modify the value of the String error.
+
+func appendErrorCode(code: Int,
+                     inout toErrorString errorString: String)  {
+    
+    if code == 400  {
+        
+        errorString += " bad request."
+        
+    }   // end if
+    
+}   // end appendErrorCode(code: Int, inout toErrorString errorString: String)
+
+// Call appendErrorCode:
+
+appendErrorCode(400, toErrorString: &error)
+
+error
