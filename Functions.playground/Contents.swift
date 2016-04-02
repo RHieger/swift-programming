@@ -320,3 +320,69 @@ func greetByMiddleName( name: (first: String, middle: String?,
 // Now call the function.
 
 greetByMiddleName( ("Robert", "Lee", "Hieger") )
+
+// Silver Challenge:
+//
+// Write a function called beanSifter(_:) that takes a grocery list
+// (as an array of strings) and “sifts out” the beans from the other
+// groceries. The function should take one argument that has an external
+// parameter name called groceryList, and it should return a named tuple
+// of the type (beans: [String], otherGroceries: [String]).
+//
+// Here is an example of how you should be able to call your function
+// and what the result should be:
+//
+// l​e​t​ ​r​e​s​u​l​t​ ​=​ ​b​e​a​n​S​i​f​t​e​r​(​g​r​o​c​e​r​y​L​i​s​t​:​ ​[​"​g​r​e​e​n​ ​b​e​a​n​s​"​,
+//   ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​"​m​i​l​k​"​,
+// ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​   ​"​b​l​a​c​k​ ​b​e​a​n​s​"​,
+//​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​  "​p​i​n​t​o​ ​b​e​a​n​s​"​,
+//  ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​"​a​p​p​l​e​s​"​]​)
+//
+// r​e​s​u​l​t​.​b​e​a​n​s​ ​=​=​ ​[​"​g​r​e​e​n​ ​b​e​a​n​s​"​,​ ​"​b​l​a​c​k​ ​b​e​a​n​s​"​,​ ​"​p​i​n​t​o​ ​b​e​a​n​s​"​]
+// r​e​s​u​l​t​.​o​t​h​e​r​G​r​o​c​eries["milk", "apples"]
+//
+// Hint: you may need to make use of a function on the String type
+// called hasSuffix(_:).
+
+func beanSifter( groceryList: [String] ) -> (beans: [String],
+                                  otherGroceries: [String]) {
+
+    // Instantiate the arrays needed in the for-in loop below.
+
+    var beans = [String]()              // Array of Strings with "bean"
+
+    var otherGroceries = [String]()     // Array of Strings without "bean"
+                                    
+    for groceryItem in groceryList    {
+                                        
+        if groceryItem.hasSuffix("beans")    {
+            
+            beans.append(groceryItem)
+            
+        }   else    {
+            
+            otherGroceries.append(groceryItem)
+            
+        }   // end if-else
+                                        
+    }   // end for groceryItem in groceries
+                                    
+    return (beans, otherGroceries)
+    
+}   // end beanSifter(...)
+
+// Call beanSifter.
+
+// First instantiate an array with a grocery list.
+
+var groceryList = ["green beans", "milk",
+                   "black beans", "pinto beans",
+                   "apples"]
+
+let result = beanSifter(groceryList)
+
+// Output results to console.
+
+print("\nresult.beans == \(result.beans)")
+
+print("\nresult.otherGroceries == \(result.otherGroceries)")
