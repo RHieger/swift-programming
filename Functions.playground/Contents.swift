@@ -188,3 +188,40 @@ func areaOfTriangle(withBase base: Double,
 // Call areaOfTriangle.
 
 areaOfTriangle(withBase: 3.0, andHeight: 5.0)
+
+// Returning Multiple Values From Functions.
+
+// NOTE: Here we make use of tuples (more study needed here) to return
+//       more than one value for a function. In this case, one array of
+//       even numbers and another of odd numbers is returned.
+
+func sortEvenOdd(numbers: [Int]) -> (evens: [Int], odds: [Int])  {
+    
+    // Instantiate the arrays used by sortEvenOdd.
+    
+    var evens = [Int]()              // Array of even numbers
+    
+    var odds = [Int]()               // Array of odd numbers
+    
+    for number in numbers   {
+        
+        // Check if number's remainder after division by 2
+        // is 0. If so, append to even array. Otherwise,
+        // append to odd array.
+        
+        if number % 2 == 0  {
+            
+            evens.append(number)
+            
+        }   else    {
+            
+            odds.append(number)
+            
+        }   // end if
+        
+    }   // end for number in numbers
+    
+    return (evens, odds)
+    
+}   // end sortEvenOdd()
+
