@@ -225,3 +225,17 @@ func sortEvenOdd(numbers: [Int]) -> (evens: [Int], odds: [Int])  {
     
 }   // end sortEvenOdd()
 
+// Now instantiate an array of numbers.
+
+let aBunchOfNumbers = [10, 1, 4, 3,
+                       57, 43, 84, 27,
+                       156, 111]
+
+// Use sortEvenOdd to separate the array into even and odd numbers.
+
+let theSortedNumbers = sortEvenOdd(aBunchOfNumbers)
+
+// Now log the result to the console.
+
+print("\nThe even numbers are: \(theSortedNumbers.evens); the odd",
+      "numbers are: \(theSortedNumbers.odds)")
